@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Natiga2023", "Natiga2023\Natiga2023.csproj", "{7E466746-E7BA-4AD8-8201-35BE5A1E3F0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataShare", "DataShare\DataShare.csproj", "{BFCF68E0-741A-4EFF-A64F-3B4D693A0FCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NatigaCom", "NatigaCom\NatigaCom.csproj", "{6720C9AD-53BA-4A07-AE8F-1AC6D187EA68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E466746-E7BA-4AD8-8201-35BE5A1E3F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E466746-E7BA-4AD8-8201-35BE5A1E3F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E466746-E7BA-4AD8-8201-35BE5A1E3F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E466746-E7BA-4AD8-8201-35BE5A1E3F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFCF68E0-741A-4EFF-A64F-3B4D693A0FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFCF68E0-741A-4EFF-A64F-3B4D693A0FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFCF68E0-741A-4EFF-A64F-3B4D693A0FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFCF68E0-741A-4EFF-A64F-3B4D693A0FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6720C9AD-53BA-4A07-AE8F-1AC6D187EA68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6720C9AD-53BA-4A07-AE8F-1AC6D187EA68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6720C9AD-53BA-4A07-AE8F-1AC6D187EA68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6720C9AD-53BA-4A07-AE8F-1AC6D187EA68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {647E8F48-6271-42B2-B918-90982502BC6D}
+	EndGlobalSection
+EndGlobal

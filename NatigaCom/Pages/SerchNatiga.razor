@@ -1,0 +1,34 @@
+﻿@page "/Search"
+  <table class="table">
+            <thead>
+              <tr>
+                
+                    <th scope="col">رقم الجلوس</th>
+                    <th scope="col">الاسم</th>
+                    <th scope="col">النتيجه</th>
+                    <th scope="col"><a href="">عرض</a></th>
+              </tr>
+            </thead>
+            <tbody>
+                @foreach(var i in ls)
+                {
+            <tr>
+                <th scope="col">@i.Number</th>
+                <th scope="col">@i.Name</th>
+                <th scope="col">@i.Grade</th>
+                <th scope="col"><a href="\Natiga\@a">عرض</a></th>
+               @{a++;}
+            </tr>
+                }
+              
+              </tbody>
+  </table>
+@code {
+    public List<BackToFront> ls{ get; set; }
+    public int a = 0;
+    protected override void OnInitialized()
+    {
+        ls = NatigaResult.ls;
+        base.OnInitialized();
+    }
+}

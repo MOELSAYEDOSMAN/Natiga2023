@@ -1,0 +1,12 @@
+E:\projects _ Summer\Natiga23\Natiga2023\DataShare\bin\Debug\net6.0\DataShare.deps.json
+E:\projects _ Summer\Natiga23\Natiga2023\DataShare\bin\Debug\net6.0\DataShare.dll
+E:\projects _ Summer\Natiga23\Natiga2023\DataShare\bin\Debug\net6.0\DataShare.pdb
+E:\projects _ Summer\Natiga23\Natiga2023\DataShare\obj\Debug\net6.0\DataShare.csproj.AssemblyReference.cache
+E:\projects _ Summer\Natiga23\Natiga2023\DataShare\obj\Debug\net6.0\DataShare.GeneratedMSBuildEditorConfig.editorconfig
+E:\projects _ Summer\Natiga23\Natiga2023\DataShare\obj\Debug\net6.0\DataShare.AssemblyInfoInputs.cache
+E:\projects _ Summer\Natiga23\Natiga2023\DataShare\obj\Debug\net6.0\DataShare.AssemblyInfo.cs
+E:\projects _ Summer\Natiga23\Natiga2023\DataShare\obj\Debug\net6.0\DataShare.csproj.CoreCompileInputs.cache
+E:\projects _ Summer\Natiga23\Natiga2023\DataShare\obj\Debug\net6.0\DataShare.dll
+E:\projects _ Summer\Natiga23\Natiga2023\DataShare\obj\Debug\net6.0\refint\DataShare.dll
+E:\projects _ Summer\Natiga23\Natiga2023\DataShare\obj\Debug\net6.0\DataShare.pdb
+E:\projects _ Summer\Natiga23\Natiga2023\DataShare\obj\Debug\net6.0\ref\DataShare.dll

@@ -1,0 +1,72 @@
+﻿@page "/"
+ <div class="Natiga">
+       
+        <EditForm Model="input" OnValidSubmit="@HandleValidSubmit" OnInvalidSubmit="@HandleInvalidSubmit">
+        <div class="Choss">
+            
+                
+            <InputRadioGroup @bind-Value="input.Type">
+                <h3>برقم الجلوس</h3>
+                <InputRadio Value="@("Number")" checked></InputRadio>
+                <h3>بالاسم</h3>
+                <InputRadio  Value=@("Name")></InputRadio>
+            </InputRadioGroup>
+            
+        </div>
+        <div class="f1">
+            <InputText @bind-Value="@input.NameOrNuber" placeholder="ادخل الاسم" required></InputText>
+            <ValidationMessage For="@(()=>input.NameOrNuber)"></ValidationMessage>
+       </div>
+       <div class="f1">
+        <input type="submit" value="بحث">
+       </div>
+        </EditForm>
+
+           @if(r==false)
+           {
+        <div class="alter">
+            <h3>لا توجد نتيجه بهذا الرقم او بهذا الاسم</h3>
+        </div>
+           }
+        
+ </div>
+ @code
+{
+    public FrontToBack input { get; set; } = new FrontToBack()
+    {
+            Type = "Number"
+    };
+    bool r = true;
+    [Inject] public INatigaComBack natigaApi { get; set; }
+    [Inject] public NavigationManager NavigationManager { get; set; }
+
+    protected async void HandleValidSubmit()
+    {
+        //await AccountMange.Logout();
+
+         var reult=await natigaApi.GetNatiga(input);
+        if(reult?.Count==1)
+        {
+            if(reult[0].search==false)
+            {
+                r = false;
+            }
+            else
+            {
+                NatigaResult.ls = reult;
+                NavigationManager.NavigateTo("/Natiga/0");
+            }
+        }
+        else
+        {
+            NatigaResult.ls = reult;
+            NavigationManager.NavigateTo("/Search");
+
+        }
+
+    }
+    protected void HandleInvalidSubmit()
+    {
+      
+    }
+ }

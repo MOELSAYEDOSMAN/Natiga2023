@@ -1,0 +1,24 @@
+﻿@page "/Natiga/{index:int}"
+<div class="Natiga">
+    <div class="filde">
+        <h3>الاسم:@value.Name</h3>
+        <h3>رقم الجلوس:@value.Number</h3>
+        <h3>المجموع:@value.Grade</h3>
+        <h3>الحاله:@value.State</h3>
+        <h3>المجوع في الميه:@value.Grader100</h3>
+    </div>
+    <div class="ot">
+        <h2>البحث عن نتيجه اخري <a href="/">اضغط هنا</a> </h2>
+
+    </div>
+</div>
+@code {
+    [Parameter]
+    public int index{ get; set; }
+    public BackToFront value{ get; set; }
+    protected override Task OnInitializedAsync()
+    {
+        value = NatigaResult.ls[index];
+        return base.OnInitializedAsync();
+    }
+}
